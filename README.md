@@ -8,7 +8,7 @@ python setup.py
 Train the classifiers!
 First of all, you must train the classifiers to test diffDefence. The training can be logged with wandb, set --wandb='run' if you want to log.
 
-#python train.py --dataset='MNIST' --classifier='classifier_a' --model_title='c_a'
+python train.py --dataset='MNIST' --classifier='classifier_a' --model_title='c_a'
 python train.py --dataset='MNIST' --classifier='classifier_b' --model_title='c_b'
 
 Tests presented in the paper use classifier_a as the main classifier and classifier_b as the substitute model to create adversarial images to attack classifier_a in the black box settings. You must train both the classifier, and afterwards, you can choose what to use as the substitute model.

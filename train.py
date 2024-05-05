@@ -224,7 +224,7 @@ def testadv(model_, images_, labels_, n_):
         if wandb.run is not None:
             wandb.log({"test_accuracy":correct/total})
         
-        return 100*correct/total
+        return (100*correct)/total
 
 
 

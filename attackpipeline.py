@@ -40,9 +40,9 @@ def getConfigs(datasetName, classifierName, attackName=None):
 
 def createClassifier(submodel, configsmodel):
 
-    r""" Create a pytorch classifier to use ART attacks
-
-    """
+""" 
+    Create a pytorch classifier to use ART attacks
+"""
     criterion = nn.CrossEntropyLoss()
     optimizer = optim.SGD(submodel.parameters(), lr=configsmodel['learning_rate'], momentum=configsmodel['momentum'])
 

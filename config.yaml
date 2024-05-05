@@ -13,7 +13,7 @@ diffusion:
   MNIST:
     batch_size: 64,
     learning_rate: 3e-4
-    epochs: 500
+    epochs: 200
     
 reconstruct:
   rec_iter: 10

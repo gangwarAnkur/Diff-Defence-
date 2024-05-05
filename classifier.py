@@ -5,8 +5,6 @@ class classifier_a(nn.Module):
     def __init__(self):
         super(classifier_a, self).__init__()
         self.relu = nn.ReLU()
-        #self.sm = nn.Softmax()
-        #self.conv0 = nn.Conv2d(in_channels=1,out_channels=1, kernel_size=[5,5],stride=1) 
         self.conv1 = nn.Conv2d(in_channels=1,out_channels=64, kernel_size=[5,5],stride=1)
         self.conv2 = nn.Conv2d(in_channels=64,out_channels=64, kernel_size=[5,5],stride=2) #10x10x64
         self.dropout1 = nn.Dropout(p=0.25)
